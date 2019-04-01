@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HandyPeople</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+
+
+    <div id="header">
+      <a id="logo">HandyPeople</a>
+      <ul id="menu">
+        <% if @user %>
+        <li><h4><%= link_to "Services", user_services_path(@user) %></h4></li>
+        <li><h4><%= link_to "Profile", user_path(@user) %></h4></li>
+        <li><h4><%= link_to 'Logout' %></h4></li>
+        <li><h4><%= link_to 'Back', :back %></h4></li>
+        <% else %>
+
+      <% end %>
+      </ul>
+    </div>
+
+
+    <%= yield %>
+  </body>
+</html>

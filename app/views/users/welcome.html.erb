@@ -1,0 +1,22 @@
+<%# form_for @user do |f| %>
+  <%# f.label :name %>
+  <%# f.text_field :name %>
+<%# end %>
+<div id="content">
+<ul>
+  <h1>Create Account</h1>
+  <%= form_for User.new, :url => create_path, :method => :post do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :username %>
+    <%= f.text_field :username %><br>
+
+    <%= f.label :password %>
+    <%= f.password_field :password %><br>
+
+    <%= f.submit 'Create Account' %>
+
+  <% end %>
+</ul>
+</div>

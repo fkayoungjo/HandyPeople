@@ -1,0 +1,8 @@
+<div id="content">
+<h1>Services</h1>
+<ul>
+  <% @services.each do |service| %>
+    <li class="btn"  align="center"><%= link_to service.name, user_service_path(@user, service) %></li>
+  <% end %>
+</ul>
+</div>

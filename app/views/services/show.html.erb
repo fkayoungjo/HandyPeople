@@ -1,0 +1,12 @@
+<div id="content">
+<h1>Service</h1>
+<h2><%= @service.name %></h2>
+<h3>Suggested Handies</h3>
+<ol>
+  <% @service.handies.each do |handy| %>
+    <li class="btn"  align="center"><%= link_to handy.name, user_service_handy_path(@user, @service, handy) %></li>
+    <% end %>
+</ol>
+<br>
+<br>
+</div>
