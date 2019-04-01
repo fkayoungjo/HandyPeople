@@ -43,7 +43,7 @@ MySQL
 
 ## Authors
 
-Jordan Simon - Initial Work, 
+Jordan Simon - Initial Work,
 Mendy Cohen - Initial Work
 
 ## Contributing
@@ -52,4 +52,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Demo
-https://youtu.be/ShjaMsb0eq4
+https://youtu.be/JAmja5Dp69k
